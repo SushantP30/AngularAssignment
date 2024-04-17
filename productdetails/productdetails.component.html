@@ -1,0 +1,27 @@
+<h1>Product Management Screen</h1>
+<table>
+    <thead>
+        <tr>
+            <td>ProductId</td>
+            <td>ProductName</td>
+            <td>ProductIdPrice</td>
+            <td>ProductIdCatagory</td>
+            <td>ExpDate</td>
+            <td>Manifacturer</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.productid}}</td>
+            <td>{{product.productname}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.catagory}}</td>
+            <td>{{product.expdate}}</td>
+            <td>{{product.manifacturer}}</td>
+
+            
+        </tr>
+    </tbody>
+</table>
+<br>
+<button (click)="getLatestData()">Refresh</button>
